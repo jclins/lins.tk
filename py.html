@@ -7,9 +7,11 @@
         <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     </head>
-    <body>
-        <b><p>Today is <u><label id='today'></label></u></p></b>
-        <h1><label id='time'></label></h1>
+    <body style="font-family: sans-serif;  font-style: normal; font-size: 12px;text-align: center;">
+        <b style="  font-size: 1.2em;"><p>Today is <u><label id='today'></label></u></p></b>
+        <br />
+        <h1 style="  font-size: 3em;">    <label id='time'></label></h1>
+
         <py-script>
             import datetime as dt
             pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))

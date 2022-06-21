@@ -8,8 +8,14 @@
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     </head>
     <body>
+        <b><p>Today is <u><label id='today'></label></u></p></b>
+        <h1><label id='time'></label></h1>
         <py-script>
-            print("<h1>Palmeiras não tem Mundial</h1>")
+            import datetime as dt
+            pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
+            ## time = input ("Que time você torce?")
+            pyscript.write('time', "Palmeiras não tem Mundial")
+
         </py-script>
     </body>
 </html>
